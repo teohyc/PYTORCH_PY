@@ -59,5 +59,4 @@ def predict_image(image_path):
     plt.show()
 
 # 5. Example usage
-# Replace 'your_image.png' with your image path
-predict_image("test0.jpg")
+predict_image("test8.jpg")
