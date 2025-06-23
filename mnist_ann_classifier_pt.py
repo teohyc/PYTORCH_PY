@@ -102,4 +102,4 @@ plt.show()
 
 # 9. Save the model
 torch.save(model.state_dict(), "mnist_ann_model.pt")
-print("✅ Model saved to 'mnist_ann_model.pt'")
+print(" Model saved to 'mnist_ann_model.pt'")
