@@ -13,7 +13,7 @@ learning_rate = 0.001
 # 2. Data with normalization
 transform = transforms.Compose([
     transforms.ToTensor(),
-    transforms.Normalize((0.5,), (0.5,))  # ✅ Normalize to [-1, 1]
+    transforms.Normalize((0.5,), (0.5,))  # Normalize to [-1, 1]
 ])
 
 train_data = datasets.MNIST(root='./data', train=True, download=True, transform=transform)
@@ -28,9 +28,9 @@ class ImprovedANN(nn.Module):
         self.model = nn.Sequential(
             nn.Flatten(),
             nn.Linear(784, 512),
-            nn.BatchNorm1d(512),         # ✅ BatchNorm stabilizes learning
+            nn.BatchNorm1d(512),         # BatchNorm stabilizes learning
             nn.ReLU(),
-            nn.Dropout(0.3),             # ✅ Dropout reduces overfitting
+            nn.Dropout(0.3),             # Dropout reduces overfitting
 
             nn.Linear(512, 256),
             nn.BatchNorm1d(256),
@@ -80,4 +80,4 @@ plt.xlabel("Epoch"); plt.ylabel("Loss"); plt.grid(); plt.legend(); plt.show()
 
 # 7. Save the model
 torch.save(model.state_dict(), "mnist_ann_model_2.pt")
-print("✅ Saved improved PyTorch model to mnist_ann_model_2.pt")
+print("Saved improved PyTorch model to mnist_ann_model_2.pt")

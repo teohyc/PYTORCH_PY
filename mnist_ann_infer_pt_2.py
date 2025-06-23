@@ -32,7 +32,7 @@ print("Using device:", device)
 model = ImprovedANN().to(device)
 model.load_state_dict(torch.load("mnist_ann_model_2.pt", map_location=device))
 model.eval()  # Set to evaluation mode (important for BatchNorm and Dropout)
-print("✅ Improved model loaded.")
+print("Improved model loaded.")
 
 # 3. Preprocess the input image
 def preprocess_image(image_path):
@@ -71,4 +71,4 @@ def predict_image(image_path):
     plt.show()
 
 # 5. Use the function
-predict_image("test8.jpg")  # 🔁 Change to your image path
+predict_image("test8.jpg")  #  Change to your image path
