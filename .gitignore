@@ -2,3 +2,4 @@
 /data
 /mnist_ann_model.pt
 /mnist_ann_model_2.pt
+/F_MNIST_data
