@@ -5,3 +5,5 @@
 /F_MNIST_data
 /10_Monkey_Species.zip
 /10_Monkey_Species
+/runs
+/monkey_best.pt
